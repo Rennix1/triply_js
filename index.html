@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+
+    <link rel="icon"
+          type="image/png"
+          href="assets/images/paper_plane_dark_green.png">
+
+    <title>Triply - Personal Travel Concierge</title>
+
+    <link href="assets/css/styles.css" type="text/css " rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="nav">
+        <div id="nav_wrapper">
+            <ul>
+                <li>
+                <a href="#"><img src="assets/images/paper_plane_dark_green.png"/> <strong>Triply</strong> <i>beta</i></a></li><li class="right-align menu">
+                <a href="#"><img src="assets/images/menu.png"/></a><ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul></li><li class="right-align search">
+                <a href="#"><img src="assets/images/magnifying-glass.png" /></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+
+        <div class="all-products page">
+
+            <div class="filters">
+                <form>
+
+                    <div class="filter-criteria">
+                        <span>Destination</span>
+                        <label><input type="checkbox" value="paris" name="destination">Paris</label>
+						<label><input type="checkbox" value="tokyo" name="destination">Tokyo</label>
+						<label><input type="checkbox" value="rome" name="destination">Rome</label>
+						<label><input type="checkbox" value="montreal" name="destination">Montreal</label>
+						<label><input type="checkbox" value="bangkok" name="destination">Bangkok</label>
+						<label><input type="checkbox" value="austin" name="destination">Austin</label>
+                        <label><input type="checkbox" value="seoul" name="destination">Seoul</label>
+						<label><input type="checkbox" value="abu_dhabi" name="destination">Abu Dhabi</label>
+                    </div>
+
+                    <div class="filter-criteria">
+						<span>Price</span>
+                        <label><input type="checkbox" value="1149" name="price">$1149</label>
+						<label><input type="checkbox" value="899" name="price">$899</label>
+						<label><input type="checkbox" value="450" name="price">$450</label>
+					</div>
+
+					<div class="filter-criteria">
+						<span>Weather</span>
+						<label><input type="checkbox" value="cold" name="weather">Cold</label>
+						<label><input type="checkbox" value="mild" name="weather">Mild</label>
+						<label><input type="checkbox" value="warm" name="weather">Warm</label>
+					</div>
+
+					<div class="filter-criteria">
+						<span>Hiking</span>
+						<label>
+                            <input type="checkbox" value="yes" name="hiking"> Yes
+                            <br>
+                            <input type="checkbox" value="no" name="hiking"> No
+                        </label>
+					</div>
+
+                    <div class="filter-criteria">
+						<span>Beach</span>
+						<label>
+                            <input type="checkbox" value="yes" name="beach"> Yes
+                            <br>
+                            <input type="checkbox" value="no" name="beach"> No
+                        </label>
+					</div>
+
+                    <div class="filter-criteria">
+						<span>Nightlife</span>
+						<label>
+                            <input type="checkbox" value="yes" name="nightlife"> Yes
+                            <br>
+                            <input type="checkbox" value="no" name="nightlife"> No
+                        </label>
+					</div>
+
+					<button>Clear filters</button>
+
+                </form>
+            </div>
+
+            <ul class="products-list">
+                <script id="products-template" type="text/x-handlebars-template">
+                    {{#each this}}
+                    <li data-index="{{id}}">
+                        <a href="#" class="product-photo"><img src="{{image.small}}" height="130" alt="{{name}}"/></a>
+                        <h2><a href="#"> {{name}} </a></h2>
+                        <ul class="product-description">
+                            <li><span>Destination: </span>{{specs.destination}}</li>
+                            <li><span>Weather: </span>{{specs.weather}}</li>
+                            <li><span>Hiking: </span>{{specs.hiking}}</li>
+                            <li><span>Beach: </span>{{specs.beach}}</li>
+                            <li><span>Nightlife: </span>{{specs.nightlife}}</li>
+                        </ul>
+                        <button>Buy Now!</button>
+                        <p class="product-price">${{specs.price}}</p>
+                        <div class="highlight"></div>
+                    </li>
+                    {{/each}}
+
+                </script>
+            </ul>
+
+        </div>
+
+        <div class="single-product page">
+
+			<div class="overlay"></div>
+
+			<div class="preview-large">
+				<h3>Single product view</h3>
+				<img src=""/>
+				<p></p>
+
+				<span class="close">×</span>
+			</div>
+
+		</div>
+
+		<div class="error page">
+			<h3>Sorry, something went wrong :(</h3>
+		</div>
+
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+	<script src="assets/js/script.js"></script>
+
+</body>
+</html>

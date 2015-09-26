@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "name": "Paris Package",
+    "specs": {
+      "destination": "Paris",
+      "price": 899,
+      "weather": "Cold",
+      "hiking": "Yes",
+      "beach": "Yes",
+      "nightlife": "Yes"
+    },
+    "description": "Your adventure awaits!",
+    "rating": 4,
+    "image": {
+      "small": "assets/images/paris.jpg",
+      "large": "assets/images/paris2.jpg"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Tokyo Package",
+    "specs": {
+      "destination": "Tokyo",
+      "price": 899,
+      "weather": "Mild",
+      "hiking": "No",
+      "beach": "Yes",
+      "nightlife": "Yes"
+    },
+    "description": "Your adventure awaits!",
+    "rating": 4,
+    "image": {
+      "small": "assets/images/tokyo.jpg",
+      "large": "assets/images/tokyo2.jpg"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Rome Package",
+    "specs": {
+      "destination": "Rome",
+      "price": 899,
+      "weather": "Warm",
+      "hiking": "Yes",
+      "beach": "No",
+      "nightlife": "Yes"
+    },
+    "description": "Your adventure awaits!",
+    "rating": 4,
+    "image": {
+      "small": "assets/images/rome.jpg",
+      "large": "assets/images/rome2.jpg"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Montreal Package",
+    "specs": {
+      "destination": "Montreal",
+      "price": 899,
+      "weather": "Cold",
+      "hiking": "Yes",
+      "beach": "No",
+      "nightlife": "Yes"
+    },
+    "description": "Your adventure awaits!",
+    "rating": 4,
+    "image": {
+      "small": "assets/images/montreal.jpg",
+      "large": "assets/images/montreal2.jpg"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Bangkok Package",
+    "specs": {
+      "destination": "Bangkok",
+      "price": 450,
+      "weather": "Warm",
+      "hiking": "Yes",
+      "beach": "Yes",
+      "nightlife": "Yes"
+    },
+    "description": "Your adventure awaits!",
+    "rating": 4,
+    "image": {
+      "small": "assets/images/bangkok.jpg",
+      "large": "assets/images/bangkok2.jpg"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Austin Package",
+    "specs": {
+      "destination": "Austin",
+      "price": 450,
+      "weather": "Warm",
+      "hiking": "Yes",
+      "beach": "No",
+      "nightlife": "Yes"
+    },
+    "description": "Your adventure awaits!",
+    "rating": 4,
+    "image": {
+      "small": "assets/images/austin.jpg",
+      "large": "assets/images/austin2.jpg"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Seoul Package",
+    "specs": {
+      "destination": "seoul",
+      "price": 1149,
+      "weather": "Warm",
+      "hiking": "No",
+      "beach": "No",
+      "nightlife": "Yes"
+    },
+    "description": "Your adventure awaits!.",
+    "rating": 4,
+    "image": {
+      "small": "assets/images/seoul.jpg",
+      "large": "assets/images/seoul2.jpg"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Abu Dhabi Package",
+    "specs": {
+      "destination": "Abu_Dhabi",
+      "price": 1149,
+      "weather": "Warm",
+      "hiking": "No",
+      "beach": "Yes",
+      "nightlife": "Yes"
+    },
+    "description": "Your adventure awaits!",
+    "rating": 4,
+    "image": {
+      "small": "assets/images/abudhabi.jpg",
+      "large": "assets/images/abudhabi2.jpg"
+    }
+  }
+]
